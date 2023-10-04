@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --black:#130f40;
+    --lighting-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: #eee;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.blogs .box-container .box{
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+
+.blogs .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 2s;
+}
+.blogs .box-container .box img:hover{
+    transform: scaleX(1.2);
+}
+
+
+.blogs .box-container .box .content{
+    padding: 2rem 2rem .5rem 2rem;
+}
+.blogs .box-container .box .content h3{
+    line-height: 1.8;
+    color: var(--black);
+    font-size: 2.2rem;
+    padding-right: .5rem 0;
+}
+
+.blogs .box-container .box .content p{
+    line-height: 1.8;
+    color: var(--lighting-color);
+    font-size: 1.5rem;
+    padding-right: .5rem 0;
+    padding-top: 1rem;
+}
+
+.blogs .box-container .box .content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    padding-top: 1rem;
+    transition: none;
+}
+
+.blogs .box-container .box .content .icons img{
+    flex:1 1 20rem;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.blogs .box-container .box .content .icons .icons-content{
+    flex:1 1 30rem;
+    padding-top: 0 !important;
+}
+
+.blogs .box-container .box .content .icons .icons-content h1 span{
+    border-radius: 50%;
+    background: #1601f8;
+    color: #ffff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.blogs .box-container .box .content .icons .icons-content p{
+    padding-top: 0rem;
+}
+
+.blogs .box-container .box .content .icons .btn{
+    display: inline-block;
+    margin-top:1rem;
+    margin-bottom: 1rem !important;
+    background:#cdcdcd;
+    color:#000000;
+    padding:.5rem 1rem;
+    border: .2rem solid #cdcdcd;
+    border-radius: .5rem;
+    cursor:pointer;
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.blogs .box-container .box .content .icons .btn:hover{
+    background: rgb(114, 0, 254);
+    border: .2rem solid  rgb(114, 0, 254);
+    color:#ffff;
+}
+
+@media (max-width: 991px){
+    html{
+    font-size: 55%;
+}
+  section{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .icons .icons-content{
+    font-size: 6px;
+}
+
+}
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 450px){
+    html{
+    font-size: 50%;
+}
+}
